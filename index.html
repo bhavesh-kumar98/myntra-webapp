@@ -4,73 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/index.css">
   <title>Myntra Clone</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="headerSection">
-      <div class="logo">
-        <a href="/">this is myntra logo</a>
+
+      <div class="logoContainer">
+        <a href="/" class="iconLogo web-sprite sprites-iconLogo-position"></a>
       </div>
+
       <nav>
         <div class="navLinks">
           <div class="navContent">
-            <div class="navLink"><a href="pages/men.html" target="_blank">Men</a>
+            <div class="navLink">
+              <a class="navAncer" href="pages/men.html" target="_blank">MEN</a>
+              <div class="dropBox">
+              </div>
+            </div>
+          </div>
+          <div class="navContent">
+            <div class="navLink">
+              <a class="navAncer" href="pages/women.html" target="_blank">WOMEN</a>
               <!-- <div class="dropBox"></div> -->
             </div>
           </div>
           <div class="navContent">
-            <div class="navLink"><a href="pages/women.html" target="_blank">Women</a>
+            <div class="navLink">
+              <a class="navAncer" href="/">KIDS</a>
               <!-- <div class="dropBox"></div> -->
             </div>
           </div>
           <div class="navContent">
-            <div class="navLink"><a href="/">Kids</a>
+            <div class="navLink">
+              <a class="navAncer" href="/">BEAUTY</a>
               <!-- <div class="dropBox"></div> -->
             </div>
           </div>
           <div class="navContent">
-            <div class="navLink"><a href="/">deco</a>
+            <div class="navLink">
+              <a class="navAncer" href="/">DECO</a>
               <!-- <div class="dropBox"></div> -->
             </div>
           </div>
           <div class="navContent">
-            <div class="navLink"><a href="/">beauity</a>
-              <!-- <div class="dropBox"></div> -->
-            </div>
-          </div>
-          <div class="navContent">
-            <div class="navLink"><a href="/">Studio</a>
+            <div class="navLink">
+              <a class="navAncer" href="/">STUDIO</a>
               <!-- <div class="dropBox"></div> -->
             </div>
           </div>
         </div>
       </nav>
+
       <div class="quer">
-        <button class="searchBtn" type="submit"><span class="searchBtnlogo">logo</span></button>
-        <input class="searchBar">
+        <button class="searchBtn" type="submit">
+          <span class="iconSearch web-sprite sprites-iconSearch-position"></span>
+        </button>
+        <input class="searchBar" type="" name="" id="" placeholder="Search for products, brands and more">
       </div>
+
       <div class="action">
-        <div class="user">
+        <div class="user actionItem">
           <div class="userIconCont">
-            <span class="iconUser web-sprite sprite-iconUser-position"></span>
+            <span class="iconUser web-sprite sprites-iconUser-position"></span>
             <span class="userTitle">Profile</span>
           </div>
           <!-- <div class="userActions"></div> -->
         </div>
-        <a href="pages/wishlist.html" class="Wishlist" target="_blank">
-          <span class="iconWishlist web-sprite sprites-iconWishlist-position"></span><span
-            class="userTitle">Wishlist</span>
+        <a href="pages/wishlist.html" class="Wishlist actionItem" target="_blank">
+          <span class="iconWishlist web-sprite sprites-iconWishlist-position"></span>
+          <span class="userTitle">Wishlist</span>
         </a>
-        <a href="pages/bag.html" class="bag" target="_blank">
-          <span class="iconBag web-sprite sprites-iconBag-position"></span><span class="bagCount">1</span>
+        <a href="pages/bag.html" class="bag actionItem" target="_blank">
+          <span class="iconBag web-sprite sprites-iconBag-position" ></span>
+          <span class="bagCount">2</span>
           <span class="userTitle">Bag</span>
         </a>
       </div>
-    </div>
 
+    </div>
   </header>
   <main></main>
   <footer></footer>
