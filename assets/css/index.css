@@ -25,17 +25,17 @@ body {
   font-weight: 400;
   color: rgb(40, 44, 63);
   font-weight: 700;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   width: 100vw;
-  overflow-x: hidden;
+  /* overflow-y: clip; */
   padding-top: 80px;
 }
 
 /*----------header section */
 header {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   right: 0;
   z-index: 1;
 }
@@ -248,7 +248,89 @@ a {
   right: -9px;
 }
 
+/*---------main */
 
-.mainCon{
-   background-color: #ff4767;
+/*----------Slide Section */
+
+.slideCont {
+}
+
+.slideShow-cont {
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.slideTra {
+  animation: trans 2s linear;
+}
+
+@keyframes trans {
+  0% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.slides > img {
+  width: 100%;
+  background-color: green;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 1000;
+  position: absolute;
+  top: 40%;
+  padding: 10px 10px 10px 5px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #7e818c41;
+}
+
+.prev {
+  left: 20px;
+}
+.next {
+  right: 20px;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    /* font-size: 11px */
+  }
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  user-select: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #dedfe1;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* active class for we add in logic to active slide dot highlight */
+.active,
+.dot:hover {
+  background-color: #7e818c;
 }
