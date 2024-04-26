@@ -1,7 +1,7 @@
 /* reset css */
 
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -28,10 +28,17 @@ body {
   background-color: aquamarine;
   width: 100vw;
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
 /*----------header section */
-
+header {
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 1;
+}
 /* all logo url */
 .web-sprite {
   background: url(../images/MyntraWebSprite.png);
@@ -69,7 +76,7 @@ body {
 
 /* navbar */
 nav {
-  margin-right: 2%;
+  margin-right: 10%;
 }
 
 .navLinks {
@@ -103,7 +110,7 @@ nav {
 .quer {
   display: flex;
   width: 28%;
-  margin-right: 5%;
+  margin-right: 6%;
 }
 
 .searchBtn {
@@ -143,14 +150,15 @@ nav {
 /* user actions */
 
 .action {
-  background-color: palegoldenrod;
+  /* background-color: palegoldenrod; */
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
+  align-items: center;
 }
 
 .actionItem {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 a {
@@ -160,13 +168,20 @@ a {
 /* profile */
 
 .user {
+  position: relative;
+  height: 33px;
 }
 
 .userIconCont {
-  /* display: inline-block; */
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iconUser {display: inline-block;}
+.iconUser {
+  display: inline-block;
+}
 
 .sprites-iconUser-position {
   width: 20px;
@@ -184,14 +199,16 @@ a {
 /* Wishlist */
 
 .Wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iconWishlist {display: inline-block;}
+.iconWishlist {
+  display: inline-block;
+}
 
 .sprites-iconWishlist-position {
-  /* width: ; */
-  /* height: ; */
-  /* background-position: ; */
   width: 19px;
   height: 17px;
   background-position: 1090px -84px;
@@ -200,20 +217,38 @@ a {
 /* Bag */
 
 .bag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .iconBag {
-    display: inline-block;
+  display: inline-block;
 }
 
 .sprites-iconBag-position {
-  /* width: ; */
-  /* height: ; */
-  /* background-position: ; */
   width: 18px;
   height: 18px;
   background-position: 1061px -58px;
 }
 
 .bagCount {
+  background-color: #ff4767;
+  color: white;
+  border-radius: 50%;
+  height: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 18px;
+  padding: 0 6px;
+  position: absolute;
+  top: -10px;
+  right: -9px;
+}
+
+
+.mainCon{
+   background-color: #ff4767;
 }
