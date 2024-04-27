@@ -1,3 +1,4 @@
+// this comment for i try to push but this file note working
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -8,10 +9,8 @@ function plusSlides(steps) {
 
 //for dot
 function currentSlide(currentIndex) {
-  showSlides(slideIndex = currentIndex);
+  showSlides((slideIndex = currentIndex));
 }
-
-
 
 // fn for the slide show
 function showSlides(steps) {
@@ -40,6 +39,4 @@ function showSlides(steps) {
 }
 
 // Automatic Slideshow
-let slideInterval = setInterval(() =>  
-  plusSlides(1),
-3000);
+let slideInterval = setInterval(() => plusSlides(1), 3000);
